@@ -1,0 +1,44 @@
+name: kiemtra1
+description: "Kiem tra giua ky - Lap trinh da nen tang (Flutter)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Gọi API (SQL Server) và OSRM
+  http: ^1.2.0
+  # Chọn file Excel để nhập danh sách sinh viên
+  file_picker: ^8.1.2
+  # Camera (Bài 6)
+  image_picker: ^1.1.0
+  permission_handler: ^11.3.0
+  # Lưu file cục bộ (Bài 8)
+  path_provider: ^2.1.4
+  # Bản đồ + định vị (Bài 7)
+  google_maps_flutter: ^2.9.0
+  geolocator: ^14.0.0
+  # Thông báo (Bài 8)
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.0
+  # Xuất PDF
+  pdf: ^3.11.0
+  printing: ^5.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+
+
+dependency_overrides:
+  image: 4.5.4
